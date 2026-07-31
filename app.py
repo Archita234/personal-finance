@@ -246,16 +246,7 @@ if st.session_state.profile_created:
             "Merchant *",
             placeholder="Amazon, Uber, Zomato..."
         )
-
-        # ----------------------------------------------------
-        # DATETIME
-        # ----------------------------------------------------
-
-        datetime_input = st.text_input(
-            "DateTime *",
-            placeholder="YYYY-MM-DD HH:MM:SS"
-        )
-
+        
         # ----------------------------------------------------
         # SUBMIT
         # ----------------------------------------------------
@@ -402,9 +393,6 @@ if st.session_state.profile_created:
 
                 "Merchant":
                     merchant.strip(),
-
-                "DateTime":
-                    date_time,
 
                 "CustAccountBalance":
                     st.session_state.current_balance,
