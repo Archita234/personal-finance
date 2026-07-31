@@ -12,7 +12,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.cluster import KMeans
 
 # First dataset
-file = input("Enter any csv file")
+file = input("Enter csv file")
 data1 = pd.read_csv(file)
 
 data1 = data1.drop(["CustomerID","CustomerDOB","CustGender"],axis =1)
